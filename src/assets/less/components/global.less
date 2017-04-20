@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    color: @font-color-1;
+    font-size: @fontsize-normal;
+}
+/*标题类的设置，主要是字体大小以及加粗样式*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+/*table 的默认样式*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*img 的以及值域块的边框*/
+fieldset,
+img {
+    border: 0;
+}
+/*li标签的默认样式*/
+li {
+    list-style: none;
+}
+/*表单项的初始化*/
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+/*表单项或的焦点时样式*/
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+/*a标签默认的样式*/
+a {
+    -webkit-touch-callout: none;
+    text-decoration: none;
+    color: @font-color-3;
+    outline: 0;
+    &:hover {
+        text-decoration: none;
+        color: @color-blue;
+    }
+}
+em,
+i {
+    font-style: normal;
+}
+em {
+    color: #f28c48;
+}
+body {
+    background: @color-bg;
+}
+.borderbottom{
+    border-bottom: #e3e3e3 solid 1px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.fenge{
+    height: 20px;
+}
