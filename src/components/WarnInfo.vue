@@ -219,34 +219,34 @@ export default {
 }
 </script>
 
-<style lang="less">
-  .fixtabel{
+<style lang="scss">
+  .fixtabel {
     position: relative;
     height: 600px;
     padding-left: 550px;
     width: 100%;
-    .lefttabel{
+    .lefttabel {
       position: absolute;
       left: 0px;
       top: 0px;
       width: 500px;
       height: 600px;
     }
-    .warndetail{
+    .warndetail {
       width: 100%;
       height: 450px;
       border: #e3e3e3 solid 1px;
       padding: 30px;
       overflow: auto;
-      .warndetaillist{
+      .warndetaillist {
         line-height: 25px;
         font-size: 16px;
         border-bottom: #e3e3e3 solid 1px;
         margin-bottom: 15px;
-        &>div{
+        & > div {
           margin-bottom: 15px;
           word-break: break-all;
-          &>span{
+          & > span {
             display: inline-block;
             color: #FF4949
           }

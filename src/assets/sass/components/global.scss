@@ -5,6 +5,7 @@
     -webkit-box-sizing: border-box;
     /* Safari */
 }
+
 body,
 div,
 dl,
@@ -43,10 +44,13 @@ button {
     margin: 0;
     padding: 0;
     font-family: "微软雅黑";
-    color: @font-color-1;
-    font-size: @fontsize-normal;
+    color: $font-color-1;
+    font-size: $fontsize-normal;
 }
+
+
 /*标题类的设置，主要是字体大小以及加粗样式*/
+
 h1,
 h2,
 h3,
@@ -56,21 +60,33 @@ h6 {
     font-size: inherit;
     font-weight: normal;
 }
+
+
 /*table 的默认样式*/
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
 /*img 的以及值域块的边框*/
+
 fieldset,
 img {
     border: 0;
 }
+
+
 /*li标签的默认样式*/
+
 li {
     list-style: none;
 }
+
+
 /*表单项的初始化*/
+
 input,
 button,
 textarea,
@@ -83,7 +99,10 @@ select {
     -webkit-appearance: none;
     outline: none;
 }
+
+
 /*表单项或的焦点时样式*/
+
 button:focus,
 input:focus,
 select:focus,
@@ -91,32 +110,44 @@ textarea:focus {
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
+
+
 /*a标签默认的样式*/
+
 a {
     -webkit-touch-callout: none;
     text-decoration: none;
-    color: @font-color-3;
+    color: $font-color-3;
     outline: 0;
     &:hover {
         text-decoration: none;
-        color: @color-blue;
+        color: $color-blue;
     }
 }
+
 em,
 i {
     font-style: normal;
 }
+
 em {
     color: #f28c48;
 }
+
 body {
-    background: @color-bg;
+    background: $color-bg;
 }
-.borderbottom{
+
+.borderbottom {
     border-bottom: #e3e3e3 solid 1px;
     margin-bottom: 15px;
     position: relative;
 }
-.fenge{
+
+.fenge {
     height: 20px;
+}
+
+.el-table__body-wrapper {
+    overflow: hidden;
 }

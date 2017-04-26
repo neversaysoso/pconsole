@@ -1,42 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { changeTitle } from '@/util'
+import routes from './routes'
 
-const Hello = resolve => require(['@/components/Hello'], resolve)
-const Details = resolve => require(['@/components/Details'], resolve)
-const WarnInfo = resolve => require(['@/components/WarnInfo'], resolve)
-const PerformInfo = resolve => require(['@/components/PerformInfo'], resolve)
-const CityInfo = resolve => require(['@/components/CityInfo'], resolve)
-const EarlyWarn = resolve => require(['@/components/EarlyWarn'], resolve)
-const MoreProject = resolve => require(['@/components/MoreProject'], resolve)
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
-    }, {
-      path: '/detail/:id',
-      name: 'Details',
-      component: Details,
-      children: [{
-        path: 'warninfo',
-        component: WarnInfo
-      }, {
-        path: 'performinfo',
-        component: PerformInfo
-      }, {
-        path: 'cityinfo',
-        component: CityInfo
-      }, {
-        path: 'earlywarn',
-        component: EarlyWarn
-      }]
-    }, {
-      path: '/moreproject',
-      name: 'MoreProject',
-      component: MoreProject
-    }
-  ]
+const router = new Router({
+  routes
 })
+
+router.afterEach(route => {
+  // change the title when the route changes
+  changeTitle(route.meta.title)
+  // change home nav state
+  // if (/home/.test(route.path) && route.path.split('/').length === 3) {
+  //   const nav = route.path.split('/')[2]
+  //   router.app.$store.commit('HOME_NAV', nav)
+  // }
+})
+
+export default router
+

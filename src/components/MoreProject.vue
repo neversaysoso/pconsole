@@ -149,17 +149,14 @@ export default {
 }
 </script>
 
-<style lang="less">
-  .title{
+<style lang="scss">
+  .title {
     color: #1D8CE0;
     font-size: 20px;
     margin-bottom: 20px;
-    .linkspan{
+    .linkspan {
       font-size: 16px;
       margin-left: 10px;
     }
   } 
-	.el-table__body-wrapper{
-		overflow: hidden
-	}
 </style>
