@@ -8,6 +8,7 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
+    "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e"
@@ -16,8 +17,6 @@
     "axios": "^0.16.1",
     "echarts": "^3.5.2",
     "element-ui": "^1.2.8",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.3",
     "qs": "^6.4.0",
     "ramda": "^0.23.0",
     "vue": "^2.2.2",
@@ -80,7 +79,9 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.16.1",
-    "webpack-merge": "^2.6.1"
+    "webpack-merge": "^2.6.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3"
   },
   "engines": {
     "node": ">= 4.0.0",

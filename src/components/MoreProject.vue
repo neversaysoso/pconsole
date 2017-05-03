@@ -138,10 +138,9 @@ export default {
 				}
 
 				projectList = R.sortBy(R.prop('join_date'))(projectList)
-
 				this.pageTotal = projectList.length
 				this.pageNo = obj.page_no
-				this.projectList = R.splitEvery(obj.page_size)(projectList)[obj.page_no-1]
+				this.projectList = R.splitEvery(parseInt(obj.page_size))(projectList)[obj.page_no-1]
 				this.loading = false
       })
     }

@@ -58,6 +58,7 @@
 
 <script>
 import ajax from '../request/api.js'
+
 export default {
   data: () => ({
     yesterdayData: {},
