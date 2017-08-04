@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <div class="title">PConsole</div>
+      <div class="title">PConsole11</div>
     </header>
     <div class="content">
       <router-view></router-view>
